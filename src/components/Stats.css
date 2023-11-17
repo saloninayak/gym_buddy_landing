@@ -1,0 +1,29 @@
+.school_section{
+
+   background-color: beige;
+   height: 360px;
+   width: 150;
+   padding-bottom: 40px;
+
+}
+.matches_made{
+
+  padding-bottom: 10px;
+  font-weight: 15;
+  font-size: 45px;
+  font-family: 'League Spartan', sans-serif;
+}
+.num {
+  float: unset; 
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 15;
+  font-size: 40px;
+  padding-top: 70px
+  
+
+}
+
+.school-style{
+    padding-bottom: 60px;
+
+}
