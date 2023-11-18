@@ -1,0 +1,159 @@
+/* HowItWorks.css */
+
+
+
+.HowItWorks {
+    background-color: #ffe7b1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    margin: 11%;
+    margin-bottom: 3%;
+}
+
+.title {
+    font-family: 'Helvetica Neue', Helvetica;
+    font-size: 140%;
+    line-height: 110%;
+    text-align: left;
+    color: #00ACDE;
+    margin-bottom: 1.5%;
+}
+
+.caption {
+    font-family: 'Gilmer Medium', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    color: black;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.bubble-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.bubble {
+    display: flex;
+    position: relative;
+    background-color: #FFFAEF;
+    border-radius: 20px; /* rounded corners */
+    padding: 15px;
+    margin-bottom: 70px;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 242px;
+    width: 566px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+}
+
+.blue-circle {
+    width: 57px;
+    height: 40px;
+    background-color: #4CC5E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.white-number {
+    font-family: 'Gilmer Medium', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.bubble-text-title {
+    font-family: 'Gilmer Medium', sans-serif;
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: left;
+    color: black;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.bubble-text-caption {
+    font-family: 'Gilmer Regular', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #4C4C4C;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.phone-image-1 {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transform: rotate(-5deg); /* Set the desired rotation angle */
+}
+
+.phone-image-2 {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transform: rotate(5deg); /* Set the desired rotation angle */
+}
+
+.phone-image-3 {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.bubble img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.arrow1-image,
+.arrow2-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media only screen and (max-width: 768px) {
+    .title-container {
+        margin: 5%;
+        margin-bottom: 3%;
+    }
+
+    .bubble {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .blue-circle {
+        margin-bottom: 20px;
+    }
+
+    .bubble-text-title,
+    .bubble-text-caption {
+        margin-left: 10px;
+    }
+}

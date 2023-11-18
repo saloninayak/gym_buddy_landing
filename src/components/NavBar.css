@@ -1,25 +1,101 @@
-/* NavBar.css */
-.navbar {
-  position: absolute;
-  top: 10px; /* Adjust the top position as needed */
-  right: 10px; /* Adjust the right position as needed */
-  background-color: white;
-  padding: 10px;
-  font-family: 'Yinmar', sans-serif;
-
-  
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px; /* Adjust the base font size */
+  overflow-x: hidden;
 }
 
-.navbar a {
+.navbar-container {
+  width: 100%;
+  padding: 1vw; 
+  background: #4cc5e8;
+  display: flex;
+  margin-left: auto;
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: flex-start; /* Adjust alignment to start */
+}
+
+.logo-container {
+  flex: 1 1 0;
+  height: auto;
+  width: auto;
+  max-height: 64px; /* Set a maximum height for the logo */
+  position: relative;
+}
+
+.logo {
+  width: 25%;
+  height: '25%'; /* Adjust the gap between buttons based on your design */
+  /*align-items: flex-start;
+  /*width: auto;
+  max-width: 100%; /* Ensure the logo scales proportionally */
+  /* Adjust the top value for logo positioning */
+
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw; /* Adjust the gap between buttons based on your design */
+  align-items: flex-start; /* Adjust alignment to start */
+}
+
+.nav-button,
+.down-button {
+  padding: 1.5vw 2vw; /* Adjust padding for both nav-button and down-button */
   color: black;
-  text-decoration: none;
-  margin-right: 20px; /* Adjust the spacing between links as needed */
-  font-size: larger;
-  font-weight: 320;
-  
-                                                
+  font-size: 1.4vw; /* Adjust font size for both buttons */
+  font-family: 'Inter';
+  font-weight: bold;
+  white-space: nowrap; /* Ensure text does not wrap */
+  cursor: pointer;
 }
 
-.navbar a:hover {
-  text-decoration: underline; /* Add underline on hover if desired */
+.down-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Make the border-radius smaller */
+  border: 0.5px solid #FFF;
+  background: #FFF;
+  color: #000;
+  font-feature-settings: 'dlig' on;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 1.4vw; /* Set the font size for the download button same as others */
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-decoration: none; /* Remove default underline */
+  transition: text-decoration 0.3s; /* Add a smooth transition for the underline effect */
+  max-width: 100%; /* Ensure the download button does not get cut off */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-right: 2.5vw; /* Add some padding on the right of the download button */
+}
+
+.nav-button:hover,
+.down-button:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .navbar-container {
+    flex-direction: row; /* Change to horizontal layout for larger screens */
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
+  .button-container {
+    flex-direction: row; /* Align buttons horizontally for larger screens */
+    align-items: center; /* Center items vertically */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-button,
+  .down-button {
+    font-size: 2vw; /* Adjust font size for smaller screens */
+  }
 }

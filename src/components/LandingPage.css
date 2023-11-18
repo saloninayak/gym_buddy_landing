@@ -1,0 +1,107 @@
+.landingpage-container {
+    width: 100%;
+    padding: 1.5vw; 
+    padding-left: 5vw;/* Adjust padding based on your design */
+    display: flex;
+     margin-left: auto;
+    flex-direction: column; /* Stack items vertically by default */
+    align-items: flex-start; 
+    height: 640px; /* Adjust padding based on your design */
+    background: #4cc5e8;
+    position: 'relative';
+}  
+  .header-text {
+    color: #CBF3FF;
+    font-size: 64px;
+    font-family: 'Mplus 1p Bold';
+    font-weight: 700;
+    line-height: 64px;
+    word-wrap: break-word;
+    position: 'relative';
+    margin-left: 60%;/* Adjust the margin as needed */
+  }
+  
+  .arrow-element {
+    margin-left: 85%; /* Adjust the margin as needed */
+    margin-top: 0%; /* Align with the header text */
+    position: 'relative';
+  }
+  .blue-box {
+    width: 71.875%;
+    height: 51.09375%;
+    margin: 8% auto 0; /* Adjust margin based on your design */
+    margin-right: 18%;
+    background: #A5E2F4;
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .hand-container {
+    position: absolute;
+    top: 64%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .hand {
+    width: 98%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .phone-container {
+    position: absolute;
+    top: 32%;
+    left: 44.28%;
+    z-index: 4;
+  }
+  
+  .phone {
+    width: 39%;
+    height: 40%;
+    position: relative;
+    z-index: 5;
+  }
+  .leftone-container {
+    position: absolute;
+    top: 66%;
+    left: 23%;
+    z-index: 6;
+  }
+  
+  .leftone {
+    width: 25%;
+    height: auto;
+    position: relative;
+    z-index: 7;
+  }
+  .rightone-container {
+    position: absolute;
+    top: 49%;
+    left: 62%;
+    z-index: 6;
+  }
+  
+  .rightone {
+    width: 42%;
+    height: auto;
+    position: relative;
+    z-index: 7;
+  }
+  .righttwo-container {
+    position: absolute;
+    top: 69%;
+    left: 62%;
+    z-index: 6;
+  }
+  
+  .righttwo {
+    width: 40%;
+    height: auto;
+    position: relative;
+    z-index: 7;
+  }
+ 
