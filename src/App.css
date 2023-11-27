@@ -1,10 +1,11 @@
 .App {
     text-align: center;
    /* Use flexbox to arrange text and image horizontally */
-    align-items: center; /* Center items vertically within the container */
+    align-items: center;/* Center items vertically within the container*/
     justify-content: center; /* Center items horizontally within the container */
     
   }
+
 
 .centered-image {
     max-width: 25%; /* Set the maximum width to 50% */
@@ -15,6 +16,7 @@
 
      /* Set the maximum height to 50% */
   }
+ 
 
 .logo {
     position: absolute;

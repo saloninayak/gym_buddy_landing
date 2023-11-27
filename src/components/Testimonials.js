@@ -15,10 +15,7 @@ function Testimonials() {
 
   return (
     <div className="testApp">
-      <header className="testApp-header">
-        <h2 className="aboutTest">What Our Users Say</h2>
-        <h1 className="titleTest">Find your community</h1>
-      </header>
+     
       <div className="mainIcons">
         {/*<img className="carousel" src={Carousel} alt="Carousel" />*/}
         <motion.div ref={carousel} className="carousel" whileTap={{cursor: "grabbing"}}>

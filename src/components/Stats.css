@@ -1,6 +1,6 @@
 .school_section{
 
-   background-color: beige;
+   background-color: white;
    height: 360px;
    width: 150;
    padding-bottom: 40px;
@@ -8,7 +8,7 @@
 }
 .matches_made{
 
-  padding-bottom: 10px;
+  padding-bottom: px;
   font-weight: 15;
   font-size: 45px;
   font-family: 'League Spartan', sans-serif;
@@ -22,8 +22,75 @@
   
 
 }
-
-.school-style{
-    padding-bottom: 60px;
+.berkeley {
+  padding-bottom: 60px;
+  padding-right: 120px;
 
 }
+.davis{
+  padding-bottom: 60px;
+  padding-right: 120px
+}
+.stanford{
+    padding-bottom: 68px;
+    padding-right: 120px;
+
+}
+
+.school-style{
+ margin-left: 100px;
+
+
+}
+.body{
+
+}
+
+
+@media (max-width: 768px) {
+  .berkeley {
+   
+    padding-bottom:20px;
+    
+  }
+  .davis{
+  
+    padding-bottom:20px;
+
+  }
+  .stanford{
+      
+    padding-bottom: 20px;
+  
+
+  }
+
+  .matches_made{
+
+    padding-bottom: px;
+    font-weight: 15;
+    font-size: 45px;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .num {
+    float: unset; 
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 15;
+    font-size: 40px;
+    padding-top: 30px
+    
+  
+  }
+  
+
+}
+
+
+
+
+
+
+  
+  
+  
+  

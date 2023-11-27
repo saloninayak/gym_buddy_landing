@@ -1,21 +1,39 @@
 .aboutApp {
   text-align: left;
   margin: 20%;
+  margin-bottom: 200px ;
+  margin-top: 20px ;
+  margin-left: 350px;
 }
 
 @media (max-width: 768px) {
   .aboutApp {
     margin: 0; /* Remove margin for mobile view */
     /*text-align: center;*/
+    text-align: center;
+   
   }
 
   .firstText, .thirdText {
-    transform: translateX(100px); /* Move the elements 100px to the right */
+    transform: translateX(100px);
+   ;
+     /* Move the elements 100px to the right */
+ 
   }
 
   .secondText {
     transform: translateX(-100px); /* Move the element 100px to the left */
   }
+
+  .parAbout{
+    margin-left: 35px;
+  }
+
+  .aboutAbout {
+    margin-left: 60px;
+  }
+
+  
 }
 
 .aboutApp-header {
@@ -36,7 +54,7 @@
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0;
-  margin-top: -1px;
+  margin-top: -80px;
   text-align: center;
   width: fit-content;
 }

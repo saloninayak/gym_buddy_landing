@@ -1,107 +1,121 @@
 .landingpage-container {
-    width: 100%;
-    padding: 1.5vw; 
-    padding-left: 5vw;/* Adjust padding based on your design */
-    display: flex;
-     margin-left: auto;
-    flex-direction: column; /* Stack items vertically by default */
-    align-items: flex-start; 
-    height: 640px; /* Adjust padding based on your design */
-    background: #4cc5e8;
-    position: 'relative';
-}  
-  .header-text {
+  width: 100%;
+  height: 640px;
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #4cc5e8;
+  position: relative;
+  z-index: 1;
+}
+
+.header-text {
+  color: #cbf3ff;
+  font-size: 4.5vw;
+  color: #CBF3FF;
+  font-family: Mplus 1p Bold;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  word-wrap: break-word;
+  position: relative;
+  margin-left: 60%;
+  margin-top: 0%; 
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  cursor: default;
+  z-index: 3;
+}
+
+
+.arrow-element {
+  margin-left: 88%;
+  margin-top: 2%;
+  position: relative;
+  z-index: 2;
+}
+
+.blue-box {
+  width: 71.875%;
+  height: 327px;
+  background: #a5e2f4;
+  position: absolute;
+  top: 40%; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  z-index: 1;
+
+  /*width: 71.875%;
+  height: 327px;
+  margin: 6% auto 0;
+  background: #a5e2f4;
+  position: relative;
+  border-radius: 15px;
+  z-index: 1;*/
+}
+
+.hand-container {
+  align-items: center;
+  position: absolute; /* Touch the bottom of the landingpage-container */
+  bottom: 0;
+  left: 15%;
+  transform: translateY(28%);
+  margin-bottom: 0;
+  object-fit: cover;
+  z-index: 2; /* Position the image at the bottom */
+}
+
+.hand {
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  bottom: 0;
+  left: 35%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+
+@media (max-width: 768px) {
+  .landingpage-container {
+    height: auto;
+  }
+
+  .header-text,
+  .header2-text {
     color: #CBF3FF;
-    font-size: 64px;
-    font-family: 'Mplus 1p Bold';
-    font-weight: 700;
-    line-height: 64px;
-    word-wrap: break-word;
-    position: 'relative';
-    margin-left: 60%;/* Adjust the margin as needed */
+font-family: Mplus 1p Bold;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 125% */
+
+    margin-left: 3vw;
+    margin-top: 8vw;
+    display: flex;
+    width: 326px;
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #CBF3FF;
+
   }
-  
-  .arrow-element {
-    margin-left: 85%; /* Adjust the margin as needed */
-    margin-top: 0%; /* Align with the header text */
-    position: 'relative';
+
+  .header2-text {
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  .blue-box {
-    width: 71.875%;
-    height: 51.09375%;
-    margin: 8% auto 0; /* Adjust margin based on your design */
-    margin-right: 18%;
-    background: #A5E2F4;
-    position: relative;
-    border-radius: 15px;
-    z-index: 1;
+
+  .hand-container,
+  .hand { /* Adjust the margin-left to match header2-text */
+    width: 100%;
+    position: static;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    transform: none;
   }
-  
-  .hand-container {
-    position: absolute;
-    top: 64%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-  
-  .hand {
-    width: 98%;
-    height: 100%;
-    position: relative;
-    z-index: 3;
-  }
-  
-  .phone-container {
-    position: absolute;
-    top: 32%;
-    left: 44.28%;
-    z-index: 4;
-  }
-  
-  .phone {
-    width: 39%;
-    height: 40%;
-    position: relative;
-    z-index: 5;
-  }
-  .leftone-container {
-    position: absolute;
-    top: 66%;
-    left: 23%;
-    z-index: 6;
-  }
-  
-  .leftone {
-    width: 25%;
-    height: auto;
-    position: relative;
-    z-index: 7;
-  }
-  .rightone-container {
-    position: absolute;
-    top: 49%;
-    left: 62%;
-    z-index: 6;
-  }
-  
-  .rightone {
-    width: 42%;
-    height: auto;
-    position: relative;
-    z-index: 7;
-  }
-  .righttwo-container {
-    position: absolute;
-    top: 69%;
-    left: 62%;
-    z-index: 6;
-  }
-  
-  .righttwo {
-    width: 40%;
-    height: auto;
-    position: relative;
-    z-index: 7;
-  }
- 
+}

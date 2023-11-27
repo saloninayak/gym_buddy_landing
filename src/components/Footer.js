@@ -1,13 +1,24 @@
 import React from 'react';
+import { forwardRef, useImperativeHandle } from 'react';
 import './Footer.css';
 import instagram from './instagram.png';
 import linkedin from './linkedin.png';
 import facebook from './facebook.png';
 import footer_download from './footer_download_button.png';
 
-const Footer = () => {
+
+
+const Footer = forwardRef((props, ref)  => {
+  useImperativeHandle(ref, () => ({
+    // Define functions or values to expose
+    scrollToTop: () => {
+      // Implement the logic to scroll to the top of the LandingPage
+      // You can use the same logic you have in your scrollHandler
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+  }));
   return (
-    <footer className='footer-style'>
+    <footer className='footer-style' id = 'footer'>
       <style>
   @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap');
      </style>
@@ -34,6 +45,6 @@ const Footer = () => {
       <p>&copy; 2023 Your Company</p>
     </footer>
   );
-};
+});
 
 export default Footer;

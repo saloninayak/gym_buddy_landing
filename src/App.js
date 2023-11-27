@@ -10,6 +10,7 @@ import NavBar from './components/NavBar';
 import Testimonials from './components/Testimonials.js'
 import LandingPage from './components/LandingPage.js';
 import HowItWorks from './components/HowItWorks.js';
+import Slider from './components/Slider.js';
 
 
 
@@ -29,7 +30,8 @@ function App() {
       <header className="App-header">
        
       </header>
-      <Testimonials/>
+      <Slider/>
+     <Testimonials/>
       <AboutUS/>
       <Footer />
      </div>
